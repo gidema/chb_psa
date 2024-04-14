@@ -1,0 +1,18 @@
+<project name="xjc" default="task1" basedir=".">
+
+    <taskdef name="xjc" classname="com.sun.tools.xjc.XJC2Task">
+      <classpath>
+        <fileset dir="lib">
+          <include name="**/*.jar" />
+        </fileset>
+      </classpath>
+    </taskdef>
+    
+    <target name="task1">
+      <xjc destdir="src/main/java" package="nl.chb.psa" extension="true" >
+        <binding dir="src/main/resources" includes="*.xjb"/>
+        <schema file="src/main/resources/xsd/chb_psa.820.xsd"/>
+      </xjc>
+    </target>
+
+</project>
