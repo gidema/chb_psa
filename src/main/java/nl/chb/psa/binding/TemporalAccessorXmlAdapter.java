@@ -1,4 +1,4 @@
-package nl.chb.binding;
+package nl.chb.psa.binding;
 
 import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 

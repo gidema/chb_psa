@@ -11,7 +11,7 @@
     <target name="task1">
       <xjc destdir="src/main/java" package="nl.chb.psa" extension="true" >
         <binding dir="src/main/resources" includes="*.xjb"/>
-        <schema file="src/main/resources/xsd/chb_psa.820.xsd"/>
+        <schema file="xsd/chb_psa.820.xsd"/>
       </xjc>
     </target>
 

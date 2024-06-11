@@ -7,7 +7,7 @@ module passengerstopassignment {
     requires java.base;
     requires java.xml;
     exports nl.chb.psa;
-    exports nl.chb.binding;
+    exports nl.chb.psa.binding;
     
     opens nl.chb.psa to jakarta.xml.bind;
 }

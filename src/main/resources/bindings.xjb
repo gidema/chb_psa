@@ -3,11 +3,8 @@
 
   <globalBindings>
     <xjc:javaType name="java.time.LocalDate" xmlType="xs:date"
-      adapter="nl.chb.binding.LocalDateXmlAdapter" />
+      adapter="nl.chb.psa.binding.LocalDateXmlAdapter" />
     <xjc:javaType name="java.time.LocalDateTime" xmlType="xs:dateTime"
-      adapter="nl.chb.binding.LocalDateTimeXmlAdapter" />
+      adapter="nl.chb.psa.binding.LocalDateTimeXmlAdapter" />
   </globalBindings>
-
-  ...
-
 </bindings>

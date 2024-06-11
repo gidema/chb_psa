@@ -1,6 +1,6 @@
-package nl.chb.binding;
+package nl.chb.psa.binding;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 /**
@@ -11,8 +11,8 @@ import java.time.format.DateTimeFormatter;
  * @see javax.xml.bind.annotation.adapters.XmlAdapter
  * @see java.time.LocalDateTime
  */
-public class LocalDateTimeXmlAdapter extends TemporalAccessorXmlAdapter<LocalDateTime> {
-    public LocalDateTimeXmlAdapter() {
-        super(DateTimeFormatter.ISO_LOCAL_DATE_TIME, LocalDateTime::from);
+public class LocalDateXmlAdapter extends TemporalAccessorXmlAdapter<LocalDate> {
+    public LocalDateXmlAdapter() {
+        super(DateTimeFormatter.ISO_LOCAL_DATE, LocalDate::from);
     }
 }
